@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlaPlayer : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class ControlaPlayer : MonoBehaviour
     private Vector3 Direction;
     public LayerMask chao;
     public GameObject GameOver;
+    public bool Vivo = true;
+
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
 
     // Update is called once per frame
     void Update()
@@ -27,6 +34,11 @@ public class ControlaPlayer : MonoBehaviour
             GetComponent<Animator>().SetBool("Moving", true);
         else
             GetComponent<Animator>().SetBool("Moving", false);
+
+        if (!Vivo)
+            if (Input.GetButtonDown("Fire1"))
+                SceneManager.LoadScene("HotelSceneModel");
+
     }
 
     void FixedUpdate()

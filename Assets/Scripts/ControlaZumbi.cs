@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class ControlaZumbi : MonoBehaviour
 {
-    public GameObject Player;
+    private GameObject Player;
     public float Velocity = 5;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        Player = GameObject.FindWithTag("Player");
+        int tipoZumbi = Random.Range(1, 27);
+        transform.GetChild(tipoZumbi).gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -46,5 +48,6 @@ public class ControlaZumbi : MonoBehaviour
     {
         Time.timeScale = 0;
         Player.GetComponent<ControlaPlayer>().GameOver.SetActive(true);
+        Player.GetComponent<ControlaPlayer>().Vivo = false;
     }
 }

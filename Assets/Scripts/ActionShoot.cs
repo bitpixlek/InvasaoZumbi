@@ -14,9 +14,13 @@ public class ActionShoot : MonoBehaviour
 
     private void OnTriggerEnter(Collider objeto)
     {
-        if(objeto.tag == "Inimigo")
+        if (objeto.tag == "Inimigo")
+        {
             Destroy(objeto.gameObject);
+        }
 
         Destroy(this.gameObject);
+
+        
     }
 }

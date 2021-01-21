@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\ControlaCamera.cs" />
     <Compile Include="Assets\Scripts\ControlaPlayer.cs" />
     <Compile Include="Assets\Scripts\ControlaZumbi.cs" />
+    <Compile Include="Assets\Scripts\GeradorZumbis.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy%401.2.16\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy%401.2.16\Editor\Collab\Bootstrap.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy%401.2.16\Editor\Collab\CollabAnalytics.cs" />
@@ -1889,6 +1890,7 @@
     <None Include="Assets\Scripts\ControlaCamera.cs.meta" />
     <None Include="Assets\Scripts\ControlaPlayer.cs.meta" />
     <None Include="Assets\Scripts\ControlaZumbi.cs.meta" />
+    <None Include="Assets\Scripts\GeradorZumbis.cs.meta" />
     <None Include="Assets\Texturas.meta" />
     <None Include="Assets\Texturas\Cenario.png.meta" />
     <None Include="Assets\Texturas\Corpos.meta" />

@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: 20
+  Inimigo: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
 --- !u!54 &-3341951720268437331
 Rigidbody:
   m_ObjectHideFlags: 0
